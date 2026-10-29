@@ -1,0 +1,271 @@
+/* ---------- Global application styling ---------- */
+* {
+    font-family: Arial, "Segoe UI", sans-serif;
+}
+
+QMainWindow, QWidget#root {
+    background-color: #ffffff;
+}
+
+QWidget#root {
+    border: 1px solid #171717;
+}
+
+/* ---------- Header and institution logo ---------- */
+QFrame#header {
+    background-color: #ffcc00;
+    border-bottom: 2px solid #171717;
+}
+
+#instituteTitle {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#instituteSubtitle {
+    color: #222222;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* ---------- Support button ---------- */
+QPushButton#supportButton {
+    background-color: #ffda36;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    color: #000000;
+    padding: 6px 14px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+QPushButton#supportButton:hover {
+    background-color: #ffe574;
+}
+
+QPushButton#supportButton:pressed {
+    background-color: #e6b800;
+}
+
+/* ---------- Main content area ---------- */
+QWidget#contentArea {
+    background-color: #ffffff;
+}
+
+/* ---------- Login mode navigation ---------- */
+QFrame#modeBar {
+    background-color: #f1f4f7;
+    border: 1px solid #d9dfe5;
+    border-radius: 6px;
+}
+
+QPushButton#modeButton {
+    background-color: transparent;
+    color: #6b7280;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px 10px;
+}
+
+QPushButton#modeButton:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+QPushButton#modeButton[active="true"] {
+    background-color: #000000;
+    color: #ffcc00;
+}
+
+/* ---------- Login forms and field labels ---------- */
+QStackedWidget#loginPages,
+QWidget#loginForm {
+    background-color: #ffffff;
+}
+
+QLabel#fieldLabel {
+    color: #374151;
+    font-size: 8px;
+    font-weight: 800;
+    margin-top: 2px;
+}
+
+QLineEdit#identityInput,
+QLineEdit#passwordInput {
+    background-color: #f9fafb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 10px;
+}
+
+QLineEdit#identityInput:focus,
+QLineEdit#passwordInput:focus {
+    border: 1px solid #ffcc00;
+    background-color: #ffffff;
+}
+
+/* ---------- Show/hide password button ---------- */
+QPushButton#eyeButton {
+    background-color: #f9fafb;
+    color: #6b7280;
+    border: 1px solid #d1d5db;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 12px;
+}
+
+QPushButton#eyeButton:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+#fieldHint {
+    color: #9ca3af;
+    font-size: 8px;
+}
+
+/* ---------- Remember ID checkbox ---------- */
+QCheckBox#rememberCheck {
+    color: #374151;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+QCheckBox#rememberCheck::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+QCheckBox#rememberCheck::indicator:unchecked {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 2px;
+}
+
+QCheckBox#rememberCheck::indicator:checked {
+    background-color: #ffcc00;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+/* ---------- Text buttons (Forgot Password) ---------- */
+QPushButton#textButton {
+    background-color: transparent;
+    border: none;
+    color: #111827;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+QPushButton#textButton:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Main login buttons ---------- */
+QPushButton#loginButton {
+    background-color: #ffcc00;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: 900;
+    padding: 8px;
+}
+
+QPushButton#loginButton:hover {
+    background-color: #ffd633;
+}
+
+QPushButton#loginButton:pressed {
+    background-color: #e6b800;
+}
+
+/* ---------- Footer ---------- */
+QLabel#footer {
+    background-color: #ffcc00;
+    border-top: 2px solid #000000;
+    color: #000000;
+    font-size: 8px;
+    font-weight: 800;
+}
+
+/* ---------- Library Branch Dropdown ---------- */
+
+QComboBox#libraryBranch {
+    background-color: #f8fafc;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 24px;
+    font-size: 11px;
+}
+
+QComboBox#libraryBranch:hover {
+    border: 1px solid #94a3b8;
+    background-color: #ffffff;
+}
+
+QComboBox#libraryBranch:focus {
+    border: 1px solid #ffcc00;
+    background-color: #ffffff;
+}
+
+/* Custom Dropdown Down-Arrow Container */
+QComboBox#libraryBranch::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+    background: transparent;
+}
+
+/*  Down Arrow  */
+QComboBox#libraryBranch::down-arrow {
+    image: none;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #64748b;
+    border-bottom: 2px solid #64748b;
+    transform: rotate(45deg);
+    margin-right: 8px;
+    margin-top: -2px;
+}
+
+/* Dropdown Menu Popup & Items */
+QComboBox#libraryBranch QAbstractItemView {
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: 0px;
+    selection-background-color: #ffcc00;
+    selection-color: #000000;
+}
+
+QComboBox#libraryBranch QAbstractItemView::item {
+    min-height: 28px;
+    padding: 4px 10px;
+    color: #334155;
+}
+
+QComboBox#libraryBranch QAbstractItemView::item:selected {
+    background-color: #ffcc00;
+    color: #000000;
+}
+
+/* ---------- Status Messages ---------- */
+
+QLabel#statusMessage {
+    color: #dc2626;
+    font-size: 9px;
+    font-weight: 700;
+    margin-top: 6px;
+    min-height: 24px;
+}
