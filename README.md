@@ -1,7 +1,9 @@
 # Library Heatmap by Group 5  
 ## Team Members:  
-Domingo, Rodney C.
-Rodulfa, Jose Martin C.
+Domingo, Rodney C.  
+
+Rodulfa, Jose Martin C.  
+
 Santiago, Niña Denise M.  
 
 
